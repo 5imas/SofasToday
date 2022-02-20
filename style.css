@@ -1,4 +1,3 @@
-
 /*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 
@@ -182,6 +181,13 @@ button {
   margin-left: 13rem;
 }
 
+.bx-shopping-bag{
+  position: absolute;
+  right: 3rem;
+  top: 1rem;
+  color: var(--title-color);
+}
+
 .nav__toggle{
     display: inline-flex;
     font-size: 1.25rem;
@@ -211,6 +217,7 @@ button {
   transform: translate(13%, -50%);
   padding: 4rem 2rem;
   background-color: #E0D3D3;
+  max-width: 30rem;
 }
 
 .nav__list{
@@ -224,6 +231,7 @@ button {
     color: var(--title-color);
     font-weight: 300;
     transition: .3s;
+    font-size: 4.5vw;
 }
 
 .nav__link:hover{
@@ -285,6 +293,7 @@ button {
   color: #E0D3D3;
   font-size: 0.8rem;
   border-radius: 5px;
+  max-width: 12rem;
 }
 
 .bx-right-arrow-alt{
@@ -334,14 +343,21 @@ button {
 .lamp{
   width: 80%;
   z-index: 1;
+  max-width: 25rem;
 }
 
 .lamptitle{
   z-index: 3;
-  font-size: 6rem;
+  font-size: 25vw;
   position: absolute;
   transform: translateY(15rem);
   font-weight: var(--font-medium);
+}
+
+@media screen and (min-width: 767px){
+  .lamptitle{
+    font-size: 11.5rem;
+  }
 }
 
 .lampsubtitle{
@@ -366,6 +382,7 @@ button {
   font-size: 0.8rem;
   border-radius: 5px;
   margin-top: 1rem;
+  max-width: 12rem;
 }
 
 .bx-cart{
@@ -382,10 +399,54 @@ button {
 
 .images{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 1rem;
-  background-color: #E1D7D7;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 767px){
+  .green{
+    position: absolute;
+    right: 0;
+    max-width: 21rem;
+    margin-right: var(--mb-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .yellow{
+    max-width: 21rem;
+    position: absolute;
+    left: 0;
+    margin-left: var(--mb-1);
+  }
+
+  .purple{
+    max-width: 21rem;
+    position: absolute;
+    left: 0;
+    margin-top: 22.5rem;
+    max-width: 21rem;
+    margin-left: var(--mb-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 21rem;
+  }
+
+  .beige{
+    position: absolute;
+    right: 0;
+    margin-top: 22.5rem;
+    max-width: 21rem;
+    margin-right: var(--mb-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 21rem;
+  }
 }
 
 .yellow{
@@ -410,7 +471,7 @@ button {
 
 /*=============== MODERN ===============*/
 .container4{
-  margin-top: 4rem;
+  margin-top: 55rem;
   margin-left: var(--mb-1);
   margin-right: var(--mb-1);
 }
@@ -438,6 +499,7 @@ button {
   text-align: center;
   margin-top: 1.5rem;
   font-weight: 300;
+  max-width: 30rem;
 }
 
 .collectionbtn{
