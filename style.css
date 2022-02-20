@@ -471,9 +471,15 @@ button {
 
 /*=============== MODERN ===============*/
 .container4{
-  margin-top: 55rem;
+  margin-top: 10rem;
   margin-left: var(--mb-1);
   margin-right: var(--mb-1);
+}
+
+@media screen and (min-width: 767px){
+  .container4{
+    margin-top: 50rem;
+  }
 }
 
 .modernpart{
